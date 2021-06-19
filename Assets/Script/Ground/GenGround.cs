@@ -14,7 +14,6 @@ public class GenGround : MonoBehaviour
     void Start()
     {
         computershader = new LoadResources.ComputerShaderLoad("Assets/ComputerShader/PerlinNoise/Perlin.compute");
-        computershader
         meshGenerator = new MeshGenerator(gameObject);
         meshGenerator.SetData(new Vector3[]{Vector3.zero, Vector3.up,Vector3.left},new int[]{0,1,2});
         
